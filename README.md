@@ -60,3 +60,23 @@ loop = asyncio.get_event_loop()
 loop.run_until_complete(main())
 loop.close()
 ```
+
+# lwrf.py
+
+lwrf.py is a python script that can be used at the command line to invoke the library and change lights/etc.
+
+The format is:
+
+```lwrf.py <command> <device> <brightness>```
+    
+Where command =
+
+* **on** = Turn Light on
+* **off** = Turn Light/Switch off
+* **switchon** = Turn Switch (socket) on
+* **bright** = Turn Light on and set brightness level
+
+* **Device** = the LWRF device name (R1D1, etc)
+* **Brightness** = 0-255 (only required for **bright** command)
+    
+   
